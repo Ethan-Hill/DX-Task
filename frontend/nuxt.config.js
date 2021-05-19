@@ -33,7 +33,7 @@ export default {
 
   googleFonts: {
     families: {
-      Poppins: true,
+      Montserrat: true,
     },
   },
 
