@@ -1,20 +1,27 @@
-# frontend
+# DX frontend
 
-## Build Setup
+This is the frontend of my DX task,
+Tailwind-styled App.
 
-```bash
-# install dependencies
-$ yarn install
+## Dependencies
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+- Yarn
+- NodeJs v12+
 
-# build for production and launch server
-$ yarn build
-$ yarn start
+## Features
 
-# generate static project
-$ yarn generate
-```
+- View all Users
+- Form login
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+You can find the backend at [this repo](https://github.com/Ethan-Hill/DX-Task/tree/main/backend)
+
+## Installation
+
+1. `git clone https://github.com/Ethan-Hill/DX-Task.git`
+2. `cd DX-Task`
+3. `cd frontend`
+4. `yarn`
+
+## Usage
+
+1. `yarn dev`
