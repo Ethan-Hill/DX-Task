@@ -1,6 +1,7 @@
 export const state = () => ({
   loading: false,
   loggedIn: false,
+  users: [],
 })
 
 export const mutations = {
@@ -11,6 +12,10 @@ export const mutations = {
   SET_LOGIN(state) {
     state.loggedIn = true
   },
+
+  SET_USERS(state, users) {
+    state.users = users
+  },
 }
 
 export const actions = {
@@ -20,6 +25,11 @@ export const actions = {
       commit('SET_LOADING')
       commit('SET_LOGIN')
     }, 3000)
+  },
+
+  async getUsers({ commit }) {
+    const users = await this.$axios.$get(`/users/`)
+    commit('SET_USERS', users)
   },
 }
 
